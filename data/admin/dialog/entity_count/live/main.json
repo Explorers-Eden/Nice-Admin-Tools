@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Nice Admin Tools: Live Entity Count",
+  "external_title": "Nice Admin Tools: Live Entity Count",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Where Do You Want To Track Entities?",
+      "color": "gray"
+    }
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:entity_count/main"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Current Position",
+      "tooltip": "Count Entities At Your Current Position",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:entity_count/live/current"
+      }
+    },
+    {
+      "label": "Player Position",
+      "tooltip": "Count Entities At A Specific Player's Position",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:entity_count/live/player"
+      }
+    },
+    {
+      "label": "Everywhere",
+      "tooltip": "Count Entities Regardless Of Their Position",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:entity_count/live/everywhere"
+      }
+    }
+  ]
+}

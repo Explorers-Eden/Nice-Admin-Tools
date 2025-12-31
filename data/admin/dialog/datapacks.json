@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:multi_action",
+  "can_close_with_escape": true,
+  "external_title": {
+    "text": "Nice Admin Tools: Data Pack Settngs"
+  },
+  "title": {
+    "text": "Nice Admin Tools: Data Pack Settngs"
+  },
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": {
+      "text": "Back"
+    },
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Fabled Roots",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:fabled_roots"
+      }
+    },
+    {
+      "label": "Katters Structures",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:kattersstructures"
+      }
+    },
+    {
+      "label": "Nice Mob Manager",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:mob_manager"
+      }
+    },
+    {
+      "label": "Nice Actions",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:nice_actions"
+      }
+    },
+    {
+      "label": "Nice Villager Type Changer",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:villager_type_changer"
+      }
+    },
+    {
+      "label": "Nice Keep Inventory",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:keep_inventory"
+      }
+    },
+    {
+      "label": "Warping Wonders",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function minecraft:warping_wonders"
+      }
+    }
+  ]
+}

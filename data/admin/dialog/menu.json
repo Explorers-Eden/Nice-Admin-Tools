@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Nice Admin Tools: Main Menu",
+  "external_title": "Nice Admin Tools: Main Menu",
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": "Close"
+  },
+  "actions": [
+    {
+      "label": "Gamerules",
+      "tooltip": "Change Vanilla Gamerules Or Just Have A Look At Them"
+    },
+    {
+      "label": "Broadcast Message",
+      "tooltip": "Send A Message To Every Player Currently Online."
+    },
+    {
+      "label": "Entity Count",
+      "tooltip": "Count Entities Over A Period Of Time Or Just Once",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:entity_count/main"
+      }
+    },
+    {
+      "label": "Data Pack Settings",
+      "tooltip": "Open An Explorer's Eden Settings Menu",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:datapacks"
+      }
+    }
+  ]
+}

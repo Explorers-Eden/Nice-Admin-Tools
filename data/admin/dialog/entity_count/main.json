@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Nice Admin Tools: Entity Count",
+  "external_title": "Nice Admin Tools: Entity Count",
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Live Count",
+      "tooltip": "Count Entities currently Present In The World",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:entity_count/live/main"
+      }
+    },
+    {
+      "label": "Tracked Count",
+      "tooltip": "Count Entities Over A Period Of Time",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:entity_count/tracked/main"
+      }
+    }
+  ]
+}

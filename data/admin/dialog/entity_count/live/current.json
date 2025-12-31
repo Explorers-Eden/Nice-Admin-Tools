@@ -1,0 +1,63 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Live Entity Count",
+  "external_title": "Nice Admin Tools: Live Entity Count",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Count Entities At Your Current Position",
+      "color": "gray"
+    }
+  },
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "mobtype",
+      "label": "Namespaced Entity Or Entity Tag List",
+      "initial": "minecraft:leave_if_all_entities"
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "distance",
+      "label": "Distance",
+      "start": 1,
+      "end": 1024,
+      "step": 1,
+      "initial": 128
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "glowing",
+      "label": "Apply Glowing To Entities",
+      "on_true": "true",
+      "on_false": "false"
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "glow_duration",
+      "label": "Duration Of Glowing Effect",
+      "label_format": "%s: %s Seconds",
+      "start": 5,
+      "end": 600,
+      "step": 5,
+      "initial": 30
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function admin:entity_count/live/current/init {mobtype:'$(mobtype)',glow_duration:$(glow_duration),glowing:$(glowing),distance:$(distance)}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:entity_count/main"
+    }
+  }
+}
