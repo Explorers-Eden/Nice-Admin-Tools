@@ -1,0 +1,7 @@
+playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2
+$tellraw @s [\
+    {"color":"gold","text":"▊ "},\
+    {"color":"white","text":"Entity Tracker started at "},\
+    {"bold":false,"click_event":{"action":"run_command","command":"/execute in $(pos_dimension) run tp $(pos_x) $(pos_y) $(pos_z)"},"color":"gold","hover_event":{"action":"show_text","value":[{"text":"Click To Teleport","color":"white","bold":false,"italic":false}]},"italic":false,"text":"[$(pos_x), $(pos_y), $(pos_z)]"},\
+    {"color":"white","text":" with a duration of $(duration) Minutes and a $(distance) Block radius."}\
+]

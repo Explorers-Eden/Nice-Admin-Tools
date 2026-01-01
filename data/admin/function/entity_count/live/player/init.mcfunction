@@ -1,5 +1,5 @@
 playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2
-scoreboard players set $entity_count admin.technical 0
+scoreboard players set $live_count admin.technical 0
 
 $data modify storage eden:temp admin.live_count.glowing set value $(glowing)
 $data modify storage eden:temp admin.live_count.glow_duration set value $(glow_duration)

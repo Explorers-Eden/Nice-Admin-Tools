@@ -1,0 +1,1 @@
+$execute in $(pos_dimension) positioned $(pos_x) $(pos_y) $(pos_z) as @e[distance=..$(distance),tag=!admin.counted] run function admin:entity_count/tracked/scheduled/exec with storage eden:temp admin.tracked_count

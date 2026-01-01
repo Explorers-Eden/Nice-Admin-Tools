@@ -8,14 +8,15 @@
   "exit_action": {
     "label": "Close"
   },
+  "columns": 1,
   "actions": [
     {
-      "label": "Gamerules",
-      "tooltip": "Change Vanilla Gamerules Or Just Have A Look At Them"
-    },
-    {
       "label": "Broadcast Message",
-      "tooltip": "Send A Message To Every Player Currently Online."
+      "tooltip": "Send A Message To Every Player Currently Online.",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "admin:broadcast"
+      }
     },
     {
       "label": "Entity Count",
