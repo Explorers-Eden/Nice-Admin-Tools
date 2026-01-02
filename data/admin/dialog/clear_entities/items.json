@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Clear Items",
+  "external_title": "Nice Admin Tools: Clear Items",
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "type",
+      "label": "Items To Clear",
+      "options": [
+        {
+          "id": "all",
+          "display": "All"
+        },
+        {
+          "id": "specific",
+          "display": "Specific",
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:text",
+      "key": "item",
+      "label": "Specific Item Or Item Tag List To Clear:",
+      "initial": "minecraft:egg"
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "distance",
+      "label": "Distance",
+      "label_format": "%s: %s Blocks",
+      "start": 1,
+      "end": 1024,
+      "step": 1,
+      "initial": 128
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function admin:clear_entities/items/init {type:$(type),item:'$(item)',distance:$(distance)}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:clear_entities/main"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Nice Admin Tools: Clear Entities",
+  "external_title": "Nice Admin Tools: Clear Entities",
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Boats",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "admin:clear_entities/boats"
+      }
+    },
+    {
+      "label": "Items",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:clear_entities/items"
+      }
+    },
+    {
+      "label": "Other Entities",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:clear_entities/other"
+      }
+    }
+  ]
+}

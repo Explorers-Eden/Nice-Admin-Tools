@@ -11,7 +11,7 @@ $execute if score $tracked_count_duration admin.technical matches ..1 run tellra
     {"color":"white","text":" Minute."}\
 ]
 
-$execute if score $tracked_count_duration admin.technical matches 1.. run tellraw @s [\
+$execute if score $tracked_count_duration admin.technical matches 2.. run tellraw @s [\
     {"color":"gold","text":"▊ "},\
     {"color":"white","text":"Entity Tracker already running at "},\
     {"bold":false,"click_event":{"action":"run_command","command":"/execute in $(pos_dimension) run tp $(pos_x) $(pos_y) $(pos_z)"},"color":"gold","hover_event":{"action":"show_text","value":[{"text":"Click To Teleport","color":"white","bold":false,"italic":false}]},"italic":false,"text":"[$(pos_x), $(pos_y), $(pos_z)]"},\

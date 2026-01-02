@@ -19,11 +19,35 @@
       }
     },
     {
+      "label": "Clear Entities",
+      "tooltip": "Clear Entities Like Boats Or Items Quickly",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:clear_entities/main"
+      }
+    },
+    {
       "label": "Entity Count",
       "tooltip": "Count Entities Over A Period Of Time Or Just Once",
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "admin:entity_count/main"
+      }
+    },
+    {
+      "label": "Time",
+      "tooltip": "Change The Current Time Of Day",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:time"
+      }
+    },
+    {
+      "label": "Weather",
+      "tooltip": "Change The Weather For A Period Of Time",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:weather"
       }
     },
     {

@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Clear Boats",
+  "external_title": "Nice Admin Tools: Clear Boats",
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "distance",
+      "label": "Distance",
+      "label_format": "%s: %s Blocks",
+      "start": 1,
+      "end": 1024,
+      "step": 1,
+      "initial": 128
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "passengers",
+      "label": "Only Boats Without Passengers",
+      "on_true": "1",
+      "on_false": "0"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "leash",
+      "label": "Only Boats That Are Not Leashed",
+      "on_true": "1",
+      "on_false": "0"
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function admin:clear_entities/boats {passengers:$(passengers),leash:$(leash),distance:$(distance)}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:clear_entities/main"
+    }
+  }
+}

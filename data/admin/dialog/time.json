@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Change Time",
+  "external_title": "Nice Admin Tools: Change Time",
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "time",
+      "label": "Time Of The Day",
+      "options": [
+        {
+          "id": "day",
+          "display": "Day"
+        },
+        {
+          "id": "noon",
+          "display": "Noon"
+        },
+        {
+          "id": "night",
+          "display": "Night"
+        },
+        {
+          "id": "midnight",
+          "display": "Midnight"
+        },
+        {
+          "id": "other",
+          "display": "Specific Tick",
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "tick",
+      "label": "Specific Tick",
+      "start": 0,
+      "end": 24000,
+      "step": 100,
+      "initial": 6000
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function admin:time/init {time:$(time),tick:$(tick)}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  }
+}

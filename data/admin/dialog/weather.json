@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Change Weather",
+  "external_title": "Nice Admin Tools: Change Weather",
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "weather",
+      "label": "Weather",
+      "options": [
+        {
+          "id": "clear",
+          "display": "Clear"
+        },
+        {
+          "id": "rain",
+          "display": "Rain"
+        },
+        {
+          "id": "thunder",
+          "display": "Thunder"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "duration",
+      "label": "Duration (In-Game Days)",
+      "start": 1,
+      "end": 365,
+      "step": 1,
+      "initial": 7
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function admin:weather {weather:$(weather), duration:$(duration)}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  }
+}

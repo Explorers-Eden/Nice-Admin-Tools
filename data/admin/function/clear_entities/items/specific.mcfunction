@@ -1,0 +1,1 @@
+$execute if items entity @s container.0 $(item) run function admin:clear_entities/items/exec
