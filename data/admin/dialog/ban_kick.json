@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Ban/Kick Player",
+  "external_title": "Nice Admin Tools: Ban/Kick Player",
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "type",
+      "label": "Type",
+      "options": [
+        {
+          "id": "kick",
+          "display": "Kick"
+        },
+        {
+          "id": "ban",
+          "display": "Ban"
+        },
+        {
+          "id": "ban-ip",
+          "display": "IP Ban"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:text",
+      "key": "player",
+      "label": "Playername To Ban/Kick:",
+      "initial": "RudeUsername",
+      "max_length": 16
+    },
+    {
+      "type": "minecraft:text",
+      "key": "reason",
+      "label": "Ban/Kick Reason:",
+      "initial": "Kicked by an Operator",
+      "max_length": 256
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "$(type) $(player) $(reason)"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  }
+}

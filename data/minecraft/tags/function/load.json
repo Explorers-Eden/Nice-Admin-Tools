@@ -1,6 +1,7 @@
 {
 	"values": 
 	[
-	"admin:load"
+	"admin:load",
+	"admin:mannequin/rotate"
 	]
 }

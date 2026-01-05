@@ -8,14 +8,38 @@
   "exit_action": {
     "label": "Close"
   },
-  "columns": 1,
+  "columns": 2,
   "actions": [
     {
+      "label": "Ban/Kick Player",
+      "tooltip": "Ban Or Kick A Player From Your Server",
+      "action": {
+        "type": "show_dialog",
+        "dialog": "admin:ban_kick"
+      }
+    },
+    {
       "label": "Broadcast Message",
-      "tooltip": "Send A Message To Every Player Currently Online.",
+      "tooltip": "Send A Message To Every Player Currently Online",
       "action": {
         "type": "show_dialog",
         "dialog": "admin:broadcast"
+      }
+    },
+    {
+      "label": "Change Time",
+      "tooltip": "Change The Current Time Of Day",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:time"
+      }
+    },
+    {
+      "label": "Change Weather",
+      "tooltip": "Change The Weather For A Period Of Time",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:weather"
       }
     },
     {
@@ -27,6 +51,14 @@
       }
     },
     {
+      "label": "Data Pack Settings",
+      "tooltip": "Open An Explorer's Eden Settings Menu",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:datapacks"
+      }
+    },
+    {
       "label": "Entity Count",
       "tooltip": "Count Entities Over A Period Of Time Or Just Once",
       "action": {
@@ -35,28 +67,32 @@
       }
     },
     {
-      "label": "Time",
-      "tooltip": "Change The Current Time Of Day",
+      "label": "Gamerules",
+      "tooltip": "View And Change Gamerules"
+    },
+    {
+      "label": "Item Displays",
+      "tooltip": "Create, Modify Or Remove A Item Displays"
+    },
+    {
+      "label": "Mannequins/NPCs",
+      "tooltip": "Create, Modify Or Remove A Mannequin/NPC",
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "admin:time"
+        "dialog": "admin:mannequin/main"
       }
     },
     {
-      "label": "Weather",
-      "tooltip": "Change The Weather For A Period Of Time",
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "admin:weather"
-      }
+      "label": "Player Info",
+      "tooltip": "Get Infos On A Player"
     },
     {
-      "label": "Data Pack Settings",
-      "tooltip": "Open An Explorer's Eden Settings Menu",
-      "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "admin:datapacks"
-      }
+      "label": "Spectate",
+      "tooltip": "Spectate A Player"
+    },
+    {
+      "label": "Text Displays",
+      "tooltip": "Create, Modify Or Remove A Text Display"
     }
   ]
 }

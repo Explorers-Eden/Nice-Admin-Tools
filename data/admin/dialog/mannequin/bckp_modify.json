@@ -1,0 +1,164 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Modify Mannequin/NPC",
+  "external_title": "Nice Admin Tools: Modify Mannequin/NPC",
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "profile",
+      "label": "Profile Name For Skin:",
+      "initial": "",
+      "max_length": 16
+    },
+    {
+      "type": "minecraft:text",
+      "key": "name",
+      "label": "Custom Name:",
+      "initial": ""
+    },
+    {
+      "type": "minecraft:text",
+      "key": "below_name",
+      "label": "Below Name Text:",
+      "initial": "",
+      "max_length": 32
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "equipment",
+      "label": "Copy Player Equipment",
+      "options": [
+        {
+          "id": "none",
+          "display": "None"
+        },
+        {
+          "id": "all",
+          "display": "All"
+        },
+        {
+          "id": "weapon",
+          "display": "Main-/Offhand"
+        },
+        {
+          "id": "armor",
+          "display": "Armor"
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "pose",
+      "label": "Pose",
+      "options": [
+        {
+          "id": "standing",
+          "display": "Standing",
+          "initial": true
+        },
+        {
+          "id": "crouching",
+          "display": "Crouching",
+          "initial": false
+        },
+        {
+          "id": "swimming",
+          "display": "Swimming",
+          "initial": false
+        },
+        {
+          "id": "fall_flying",
+          "display": "Fall Flying",
+          "initial": false
+        },
+        {
+          "id": "sleeping",
+          "display": "Sleeping",
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "scale",
+      "label": "Scale",
+      "label_format": "options.percent_value",
+      "start": 1,
+      "end": 250,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "tp",
+      "label": "Move To Current Position",
+      "on_true": "1",
+      "on_false": "0"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "rotate",
+      "label": "Rotate Towards Nearest Player",
+      "initial": false,
+      "on_true": "1",
+      "on_false": "0"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "name_visible",
+      "label": "Custom Name Visible",
+      "initial": false,
+      "on_true": "1",
+      "on_false": "0"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "immovable",
+      "label": "Immovable",
+      "initial": false,
+      "on_true": "true",
+      "on_false": "false"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "invulnerable",
+      "label": "Invulnerable",
+      "initial": false,
+      "on_true": "1",
+      "on_false": "0"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "no_gravity",
+      "label": "No Gravity",
+      "initial": false,
+      "on_true": "1",
+      "on_false": "0"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "cape",
+      "label": "Hide Cape",
+      "initial": false,
+      "on_true": "true",
+      "on_false": "false"
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function admin:mannequin/modify/init {tp:$(tp),scale:$(scale),rotate:$(rotate),equipment:$(equipment),name_visible:$(name_visible),profile:'$(profile)',name:'$(name)',below_name:'$(below_name)',pose:$(pose),immovable:$(immovable),invulnerable:$(invulnerable),no_gravity:$(no_gravity),cape:$(cape)}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:mannequin/main"
+    }
+  }
+}
