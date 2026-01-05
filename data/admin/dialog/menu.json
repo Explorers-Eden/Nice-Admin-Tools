@@ -68,11 +68,11 @@
     },
     {
       "label": "Gamerules",
-      "tooltip": "View And Change Gamerules"
+      "tooltip": "(No Added Yet)\nView And Change Gamerules"
     },
     {
       "label": "Item Displays",
-      "tooltip": "Create, Modify Or Remove A Item Displays"
+      "tooltip": "(No Added Yet)\nCreate, Modify Or Remove A Item Displays"
     },
     {
       "label": "Mannequins/NPCs",
@@ -84,15 +84,19 @@
     },
     {
       "label": "Player Info",
-      "tooltip": "Get Infos On A Player"
+      "tooltip": "(No Added Yet)\nGet Infos On A Player"
     },
     {
       "label": "Spectate",
-      "tooltip": "Spectate A Player"
+      "tooltip": "Spectate A Player",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:spectate"
+      }
     },
     {
       "label": "Text Displays",
-      "tooltip": "Create, Modify Or Remove A Text Display"
+      "tooltip": "(No Added Yet)\nCreate, Modify Or Remove A Text Display"
     }
   ]
 }

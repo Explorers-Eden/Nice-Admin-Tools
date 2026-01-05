@@ -2,6 +2,7 @@
 	"values": 
 	[
 	"admin:load",
-	"admin:mannequin/rotate"
-	]
+	"admin:mannequin/rotate",
+	"admin:spectate/remove_effect/init"
+]
 }
