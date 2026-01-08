@@ -54,8 +54,9 @@
       "label": "Data Pack Settings",
       "tooltip": "Open An Explorer's Eden Settings Menu",
       "action": {
-        "type": "minecraft:show_dialog",
-        "dialog": "admin:datapacks"
+        "type": "minecraft:run_command",
+        "dialog": "admin:datapacks",
+        "command": "function admin:dialog/dynamic/datapack_settings/init"
       }
     },
     {
@@ -67,8 +68,12 @@
       }
     },
     {
-      "label": "Gamerules",
-      "tooltip": "(No Added Yet)\nView And Change Gamerules"
+      "label": "Game Rules",
+      "tooltip": "View And Change Game Rules",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function admin:dialog/dynamic/gamerules/init"
+      }
     },
     {
       "label": "Item Displays",

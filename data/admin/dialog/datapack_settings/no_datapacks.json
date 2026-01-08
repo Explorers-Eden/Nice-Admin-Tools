@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:notice",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "You don't have any other Explorer's Eden data packs with an active settings menu.",
+      "color": "red"
+    }
+  },
+  "can_close_with_escape": true,
+  "external_title": {
+    "text": "Nice Admin Tools: Data Pack Settings"
+  },
+  "title": {
+    "text": "Nice Admin Tools: Data Pack Settings"
+  },
+  "pause": false,
+  "after_action": "close",
+  "action": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  }
+}

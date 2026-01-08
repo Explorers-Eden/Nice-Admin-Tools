@@ -15,14 +15,14 @@ execute unless data storage eden:temp admin.time{type:"other"} run tellraw @s [\
     {"color":"gold","text":"▊ "},\
     {"color":"white","text":"Time was set to "},\
     {"bold":false,"color":"gold","italic":false,"nbt":"admin.time.type","storage":"eden:temp"},\  
-    {"color":"white","text":"."},\
+    {"color":"white","text":"."}\
 ]
 
 $execute if data storage eden:temp admin.time{type:"other"} run tellraw @s [\
     {"color":"gold","text":"▊ "},\
     {"color":"white","text":"Time was set to "},\ 
     {"color":"gold","text":"$(tick)"},\ 
-    {"color":"white","text":" Ticks."},\
+    {"color":"white","text":" Ticks."}\
 ]
 
 data remove storage eden:temp admin.time
