@@ -11,6 +11,10 @@ execute store result storage eden:temp admin.modify_npc.pos_x int 1 run data get
 execute store result storage eden:temp admin.modify_npc.pos_y int 1 run data get entity @n[type=minecraft:mannequin,distance=..16,tag=admin.npc] Pos[1]
 execute store result storage eden:temp admin.modify_npc.pos_z int 1 run data get entity @n[type=minecraft:mannequin,distance=..16,tag=admin.npc] Pos[2]
 data modify storage eden:temp admin.modify_npc.pos_dimension set from entity @s Dimension
+data modify storage eden:temp admin.modify_npc.pos_dimension_color set value "gold"
+execute if data storage eden:temp admin.modify_npc{pos_dimension:"minecraft:overworld"} run data modify storage eden:temp admin.modify_npc.pos_dimension_color set value "dark_green"
+execute if data storage eden:temp admin.modify_npc{pos_dimension:"minecraft:the_end"} run data modify storage eden:temp admin.modify_npc.pos_dimension_color set value "dark_purple"
+execute if data storage eden:temp admin.modify_npc{pos_dimension:"minecraft:the_nether"} run data modify storage eden:temp admin.modify_npc.pos_dimension_color set value "dark_red"
 
 $data modify storage eden:temp admin.summon_npc.equipment set value $(equipment)
 $data modify storage eden:temp admin.modify_npc.cape set value $(cape)
@@ -30,4 +34,4 @@ execute store result storage eden:temp admin.modify_npc.scale float 0.01 run dat
 
 function admin:mannequin/modify/exec with storage eden:temp admin.modify_npc
 
-#data remove storage eden:temp admin.modify_npc
+data remove storage eden:temp admin.modify_npc

@@ -6,6 +6,6 @@ $tellraw @s [\
     {"color":"white","text":" Entities "},\
     {"color":"gray","text":"($(mobtype))"},\    
     {"color":"white","text":" counted in a $(distance) Block radius at "},\
-    {"bold":false,"click_event":{"action":"run_command","command":"/execute in $(pos_dimension) run tp $(pos_x) $(pos_y) $(pos_z)"},"color":"gold","hover_event":{"action":"show_text","value":[{"text":"Click To Teleport","color":"white","bold":false,"italic":false}]},"italic":false,"text":"[$(player)'s Position]"},\
+    {"bold":false,"click_event":{"action":"run_command","command":"/execute in $(pos_dimension) run tp $(pos_x) $(pos_y) $(pos_z)"},"color":"$(pos_dimension_color)","hover_event":{"action":"show_text","value":[{"text":"Click To Teleport","color":"white","bold":false,"italic":false}]},"italic":false,"text":"[$(player)'s Position]"},\
     {"color":"white","text":"."},\
 ]

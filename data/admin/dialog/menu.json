@@ -76,8 +76,16 @@
       }
     },
     {
+      "label": "Inspect Player",
+      "tooltip": "Get Infos On A Player",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:inspect_player"
+      }
+    },
+    {
       "label": "Item Displays",
-      "tooltip": "(No Added Yet)\nCreate, Modify Or Remove A Item Displays"
+      "tooltip": "(Not Added Yet)\nCreate, Modify Or Remove A Item Displays"
     },
     {
       "label": "Mannequins/NPCs",
@@ -86,10 +94,6 @@
         "type": "minecraft:show_dialog",
         "dialog": "admin:mannequin/main"
       }
-    },
-    {
-      "label": "Player Info",
-      "tooltip": "(No Added Yet)\nGet Infos On A Player"
     },
     {
       "label": "Spectate",
@@ -101,7 +105,7 @@
     },
     {
       "label": "Text Displays",
-      "tooltip": "(No Added Yet)\nCreate, Modify Or Remove A Text Display"
+      "tooltip": "(Not Added Yet)\nCreate, Modify Or Remove A Text Display"
     }
   ]
 }

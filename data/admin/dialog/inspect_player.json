@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Inspect Player",
+  "external_title": "Nice Admin Tools: Inspect Player",
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "name",
+      "label": "Name Of The Player:",
+      "initial": "MyCoolUsername",
+      "max_length": 16
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function admin:inspect_player/init {name:$(name)}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  }
+}
