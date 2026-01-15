@@ -152,6 +152,13 @@
           }
         },
         {
+          "id": "gray",
+          "display": {
+            "text": "Gray",
+            "color": "gray"
+          }
+        },
+        {
           "id": "dark_gray",
           "display": {
             "text": "Dark Gray",

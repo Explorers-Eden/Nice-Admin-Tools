@@ -105,7 +105,11 @@
     },
     {
       "label": "Text Displays",
-      "tooltip": "(Not Added Yet)\nCreate, Modify Or Remove A Text Display"
+      "tooltip": "Create, Modify Or Remove A Text Display",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:text_display/main"
+      }
     }
   ]
 }

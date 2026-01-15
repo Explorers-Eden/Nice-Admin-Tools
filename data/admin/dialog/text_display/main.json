@@ -1,7 +1,7 @@
 {
   "type": "minecraft:multi_action",
-  "title": "Nice Admin Tools: Edit Mannequins/NPCs",
-  "external_title": "Nice Admin Tools: Edit Mannequins/NPCs",
+  "title": "Nice Admin Tools: Edit Text Displays",
+  "external_title": "Nice Admin Tools: Edit Text Displays",
   "can_close_with_escape": true,
   "pause": false,
   "after_action": "close",
@@ -18,7 +18,7 @@
       "label": "Create",
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "admin:mannequin/summon"
+        "dialog": "admin:text_display/summon"
       }
     },
     {
@@ -26,14 +26,14 @@
       "action": {
         "type": "minecraft:run_command",
         "template": "function ",
-        "command": "function admin:dialog/dynamic/modify_mannequin/init"
+        "command": "function admin:dialog/dynamic/modify_text_display/init"
       }
     },
     {
       "label": "Remove",
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "admin:mannequin/remove"
+        "dialog": "admin:text_display/remove"
       }
     }
   ]

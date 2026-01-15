@@ -1,2 +1,3 @@
+function admin:dialog/dynamic/modify_mannequin/default_values
 execute as @n[type=minecraft:mannequin,distance=..16,tag=admin.npc] run function admin:dialog/dynamic/modify_mannequin/get_data
 function admin:dialog/dynamic/modify_mannequin/exec with storage eden:settings nice_admin_tools.modify_mannequin

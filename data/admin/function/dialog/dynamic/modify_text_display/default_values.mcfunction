@@ -1,0 +1,32 @@
+data modify storage eden:settings nice_admin_tools.modify_text_display merge value {\
+text:"",\
+size:100,\
+initial_color_white:"true",\
+initial_color_black:"false",\
+initial_color_blue:"false",\
+initial_color_dark_blue:"false",\
+initial_color_green:"false",\
+initial_color_dark_green:"false",\
+initial_color_aqua:"false",\
+initial_color_dark_aqua:"false",\
+initial_color_red:"false",\
+initial_color_dark_red:"false",\
+initial_color_light_purple:"false",\
+initial_color_dark_purple:"false",\
+initial_color_gold:"false",\
+initial_color_gray:"false",\
+initial_color_dark_gray:"false",\
+initial_color_yellow:"false",\
+bold:"true",\
+italic:"true",\
+initial_billboard_fixed:"true",\
+initial_billboard_vertical:"false",\
+initial_billboard_horizontal:"false",\
+initial_billboard_center:"false",\
+initial_alignment_center:"true",\
+initial_alignment_left:"false",\
+initial_alignment_right:"false",\
+background:"true",\
+see_through:"true",\
+command_template: "function admin:text_display/modify/init {tp:$(tp),billboard:$(billboard),text:'$(text)',color:$(color),bold:$(bold),italic:$(italic),size:$(size),alignment:$(alignment),background:$(background),see_through:$(see_through)}"\
+}

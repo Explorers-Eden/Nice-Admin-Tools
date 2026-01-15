@@ -1,0 +1,20 @@
+$summon text_display ~ ~ ~ {\
+    billboard:"$(billboard)",\
+    default_background:$(background)b,\
+    see_through:$(see_through)b,\
+    alignment:"$(alignment)",\
+    Tags:["admin.text_display"],\
+    transformation:{\
+        left_rotation:[0f,0f,0f,1f],\
+        right_rotation:[0f,0f,0f,1f],\
+        translation:[0f,0f,0f],\
+        scale:[$(size)f,$(size)f,$(size)f]\
+    },\
+    text:{\
+        "bold":$(bold)e,\
+        "color":"$(color)",\
+        "italic":$(italic)e,\
+        "text":"$(text)"\
+    },\
+    background:1908001\
+}

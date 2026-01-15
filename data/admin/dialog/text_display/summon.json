@@ -1,0 +1,301 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Create Text Display",
+  "external_title": "Nice Admin Tools: Create Text Display",
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "text",
+      "label": "Display Text:",
+      "initial": "",
+      "max_length": 1024
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "color",
+      "label": "Color",
+      "options": [
+        {
+          "id": "white",
+          "display": {
+            "text": "White",
+            "color": "white"
+          },
+          "initial": true
+        },
+        {
+          "id": "black",
+          "display": {
+            "text": "Black",
+            "color": "black"
+          },
+          "initial": false
+        },
+        {
+          "id": "blue",
+          "display": {
+            "text": "Blue",
+            "color": "blue"
+          },
+          "initial": false
+        },
+        {
+          "id": "dark_blue",
+          "display": {
+            "text": "Dark Blue",
+            "color": "dark_blue"
+          },
+          "initial": false
+        },
+        {
+          "id": "green",
+          "display": {
+            "text": "Green",
+            "color": "green"
+          },
+          "initial": false
+        },
+        {
+          "id": "dark_green",
+          "display": {
+            "text": "Dark Green",
+            "color": "dark_green"
+          },
+          "initial": false
+        },
+        {
+          "id": "aqua",
+          "display": {
+            "text": "Aqua",
+            "color": "aqua"
+          },
+          "initial": false
+        },
+        {
+          "id": "dark_aqua",
+          "display": {
+            "text": "Dark Aqua",
+            "color": "dark_aqua"
+          },
+          "initial": false
+        },
+        {
+          "id": "red",
+          "display": {
+            "text": "Red",
+            "color": "red"
+          },
+          "initial": false
+        },
+        {
+          "id": "dark_red",
+          "display": {
+            "text": "Dark Red",
+            "color": "dark_red"
+          },
+          "initial": false
+        },
+        {
+          "id": "light_purple",
+          "display": {
+            "text": "Light Purple",
+            "color": "light_purple"
+          },
+          "initial": false
+        },
+        {
+          "id": "dark_purple",
+          "display": {
+            "text": "Dark Purple",
+            "color": "dark_purple"
+          },
+          "initial": false
+        },
+        {
+          "id": "gold",
+          "display": {
+            "text": "Gold",
+            "color": "gold"
+          },
+          "initial": false
+        },
+        {
+          "id": "gray",
+          "display": {
+            "text": "Gray",
+            "color": "gray"
+          },
+          "initial": false
+        },
+        {
+          "id": "dark_gray",
+          "display": {
+            "text": "Dark Gray",
+            "color": "dark_gray"
+          },
+          "initial": false
+        },
+        {
+          "id": "yellow",
+          "display": {
+            "text": "Yellow",
+            "color": "yellow"
+          },
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "bold",
+      "label": "Bold",
+      "options": [
+        {
+          "id": "tru",
+          "display": {
+            "text": "True",
+            "color": "green"
+          }
+        },
+        {
+          "id": "fals",
+          "display": {
+            "text": "False",
+            "color": "red"
+          },
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "italic",
+      "label": "Italic",
+      "options": [
+        {
+          "id": "tru",
+          "display": {
+            "text": "True",
+            "color": "green"
+          }
+        },
+        {
+          "id": "fals",
+          "display": {
+            "text": "False",
+            "color": "red"
+          },
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "size",
+      "label": "Size",
+      "label_format": "options.percent_value",
+      "start": 1,
+      "end": 200,
+      "step": 1,
+      "initial": 100
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "billboard",
+      "label": "Billboard",
+      "options": [
+        {
+          "id": "fixed",
+          "display": "Fixed",
+          "initial": true
+        },
+        {
+          "id": "vertical",
+          "display": "Vertical",
+          "initial": false
+        },
+        {
+          "id": "horizontal",
+          "display": "Horizontal",
+          "initial": false
+        },
+        {
+          "id": "center",
+          "display": "Center",
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "id": "center",
+          "display": "Center",
+          "initial": true
+        },
+        {
+          "id": "left",
+          "display": "Left",
+          "initial": false
+        },
+        {
+          "id": "right",
+          "display": "Right",
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "background",
+      "label": "Show Background",
+      "options": [
+        {
+          "id": "1",
+          "display": "True"
+        },
+        {
+          "id": "0",
+          "display": "False",
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "see_through",
+      "label": "See Through",
+      "options": [
+        {
+          "id": "1",
+          "display": "True"
+        },
+        {
+          "id": "0",
+          "display": "False",
+          "initial": true
+        }
+      ]
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function admin:text_display/summon/init {billboard:$(billboard),text:'$(text)',color:$(color),bold:$(bold),italic:$(italic),size:$(size),alignment:$(alignment),background:$(background),see_through:$(see_through)}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:text_display/main"
+    }
+  }
+}

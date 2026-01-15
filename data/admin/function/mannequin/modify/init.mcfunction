@@ -16,7 +16,7 @@ execute if data storage eden:temp admin.modify_npc{pos_dimension:"minecraft:over
 execute if data storage eden:temp admin.modify_npc{pos_dimension:"minecraft:the_end"} run data modify storage eden:temp admin.modify_npc.pos_dimension_color set value "dark_purple"
 execute if data storage eden:temp admin.modify_npc{pos_dimension:"minecraft:the_nether"} run data modify storage eden:temp admin.modify_npc.pos_dimension_color set value "dark_red"
 
-$data modify storage eden:temp admin.summon_npc.equipment set value $(equipment)
+$data modify storage eden:temp admin.modify_npc.equipment set value $(equipment)
 $data modify storage eden:temp admin.modify_npc.cape set value $(cape)
 $data modify storage eden:temp admin.modify_npc.below_name set value '$(below_name)'
 $data modify storage eden:temp admin.modify_npc.name set value '$(name)'

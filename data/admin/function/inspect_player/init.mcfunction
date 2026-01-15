@@ -39,6 +39,11 @@ execute if data storage eden:temp inspect{death_dimension:"minecraft:overworld"}
 execute if data storage eden:temp inspect{death_dimension:"minecraft:the_end"} run data modify storage eden:temp inspect.death_dimension_color set value "dark_purple"
 execute if data storage eden:temp inspect{death_dimension:"minecraft:the_nether"} run data modify storage eden:temp inspect.death_dimension_color set value "dark_red"
 
+data modify storage eden:temp inspect.respawn_x set value 0
+data modify storage eden:temp inspect.respawn_y set value 0
+data modify storage eden:temp inspect.respawn_z set value 0
+data modify storage eden:temp inspect.respawn_dimension set value "minecraft:overworld"
+
 $data modify storage eden:temp inspect.respawn_x set from entity $(name) respawn.pos[0]
 $data modify storage eden:temp inspect.respawn_y set from entity $(name) respawn.pos[1]
 $data modify storage eden:temp inspect.respawn_z set from entity $(name) respawn.pos[2]
