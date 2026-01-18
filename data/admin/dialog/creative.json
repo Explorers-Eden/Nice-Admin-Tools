@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Nice Admin Tools: Creative Mode",
+  "external_title": "Nice Admin Tools: Creative Mode",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Position And Inventory Will Be Stored Upon Entering Creative Mode And Restored When Exiting Via This Menu",
+      "color": "gray"
+    }
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Enter",
+      "tooltip": "Enter Creative Mode",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function admin:creative/enter/init"
+      }
+    },
+    {
+      "label": "Exit",
+      "tooltip": "Exit Creative Move",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "function admin:creative/exit/init"
+      }
+    }
+  ]
+}

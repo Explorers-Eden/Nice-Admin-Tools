@@ -51,6 +51,14 @@
       }
     },
     {
+      "label": "Creative Mode",
+      "tooltip": "Enter Creative Mode. Position And Inventory Will Be Stored And Cleared.",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:creative"
+      }
+    },
+    {
       "label": "Data Pack Settings",
       "tooltip": "Open An Explorer's Eden Settings Menu",
       "action": {
@@ -85,7 +93,7 @@
     },
     {
       "label": "Item Displays",
-      "tooltip": "(Not Added Yet)\nCreate, Modify Or Remove A Item Displays"
+      "tooltip": "(Not Added Yet)\nCreate, Modify Or Remove an Item Display"
     },
     {
       "label": "Mannequins/NPCs",
