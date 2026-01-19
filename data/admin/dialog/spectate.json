@@ -1,7 +1,7 @@
 {
   "type": "minecraft:confirmation",
-  "title": "Nice Admin Tools: Start Player Spectate",
-  "external_title": "Nice Admin Tools: Start Player Spectate",
+  "title": "Nice Admin Tools: Player Spectate",
+  "external_title": "Nice Admin Tools: Player Spectate",
   "inputs": [
     {
       "type": "minecraft:text",

@@ -104,6 +104,14 @@
       }
     },
     {
+      "label": "Mob Spawner",
+      "tooltip": "Quickly Create A Custom Mob Spawner.",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:mob_spawner"
+      }
+    },
+    {
       "label": "Spectate",
       "tooltip": "Spectate A Player",
       "action": {

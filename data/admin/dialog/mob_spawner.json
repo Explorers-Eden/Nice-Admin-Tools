@@ -1,0 +1,90 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Mob Spawner",
+  "external_title": "Nice Admin Tools: Mob Spawner",
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "mob",
+      "label": "Namespaced Entity Name:",
+      "initial": "minecraft:zombie"
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "spawncount",
+      "label": "Spawn Count",
+      "label_format": "%s: %s Entities",
+      "start": 1,
+      "end": 64,
+      "step": 1,
+      "initial": 4
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "requiredplayerrange",
+      "label": "Required Player Range",
+      "label_format": "%s: %s Blocks",
+      "start": 1,
+      "end": 64,
+      "step": 1,
+      "initial": 16
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "spawnrange",
+      "label": "Spawn Range",
+      "label_format": "%s: %s Blocks",
+      "start": 1,
+      "end": 64,
+      "step": 1,
+      "initial": 4
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "maxnearbyentities",
+      "label": "Max Nearby Entities",
+      "label_format": "%s: %s Entities",
+      "start": 1,
+      "end": 64,
+      "step": 1,
+      "initial": 6
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "minspawndelay",
+      "label": "Min Spawn Delay",
+      "label_format": "%s: %s Ticks",
+      "start": 0,
+      "end": 6000,
+      "step": 20,
+      "initial": 200
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "maxspawndelay",
+      "label": "Max Spawn Delay",
+      "label_format": "%s: %s Ticks",
+      "start": 0,
+      "end": 6000,
+      "step": 20,
+      "initial": 800
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "function admin:mob_spawner {requiredplayerrange:$(requiredplayerrange),mob:'$(mob)',spawncount:$(spawncount),spawnrange:$(spawnrange),maxnearbyentities:$(maxnearbyentities),minspawndelay:$(minspawndelay),maxspawndelay:$(maxspawndelay)}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  }
+}
