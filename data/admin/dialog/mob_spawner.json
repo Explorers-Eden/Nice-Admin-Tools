@@ -6,12 +6,14 @@
     {
       "type": "minecraft:text",
       "key": "mob",
+      "width": 256,
       "label": "Namespaced Entity Name:",
       "initial": "minecraft:zombie"
     },
     {
       "type": "minecraft:number_range",
       "key": "spawncount",
+      "width": 256,
       "label": "Spawn Count",
       "label_format": "%s: %s Entities",
       "start": 1,
@@ -22,6 +24,7 @@
     {
       "type": "minecraft:number_range",
       "key": "requiredplayerrange",
+      "width": 256,
       "label": "Required Player Range",
       "label_format": "%s: %s Blocks",
       "start": 1,
@@ -32,6 +35,7 @@
     {
       "type": "minecraft:number_range",
       "key": "spawnrange",
+      "width": 256,
       "label": "Spawn Range",
       "label_format": "%s: %s Blocks",
       "start": 1,
@@ -42,6 +46,7 @@
     {
       "type": "minecraft:number_range",
       "key": "maxnearbyentities",
+      "width": 256,
       "label": "Max Nearby Entities",
       "label_format": "%s: %s Entities",
       "start": 1,
@@ -52,6 +57,7 @@
     {
       "type": "minecraft:number_range",
       "key": "minspawndelay",
+      "width": 256,
       "label": "Min Spawn Delay",
       "label_format": "%s: %s Ticks",
       "start": 0,
@@ -62,6 +68,7 @@
     {
       "type": "minecraft:number_range",
       "key": "maxspawndelay",
+      "width": 256,
       "label": "Max Spawn Delay",
       "label_format": "%s: %s Ticks",
       "start": 0,

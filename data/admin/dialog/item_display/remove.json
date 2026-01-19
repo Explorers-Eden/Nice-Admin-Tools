@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:confirmation",
+  "title": "Nice Admin Tools: Remove Item Display",
+  "external_title": "Nice Admin Tools: Remove Item Display",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": {
+      "text": "Proceeding will result in the nearest Item Display in a 16 Block radius being removed. Handle with caution.",
+      "color": "red"
+    }
+  },
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Confirm",
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "function admin:item_display/remove/init"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:item_display/main"
+    }
+  }
+}

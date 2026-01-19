@@ -12,7 +12,7 @@ execute store result storage eden:temp admin.text_display.size float 0.01 run da
 
 function admin:text_display/summon/exec with storage eden:temp admin.text_display
 
-#data remove storage eden:temp admin.text_display
+data remove storage eden:temp admin.text_display
 
 playsound minecraft:entity.chicken.egg neutral @s ~ ~ ~ .5 2
 tellraw @s [\

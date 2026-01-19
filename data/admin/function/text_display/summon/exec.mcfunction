@@ -2,6 +2,7 @@ $summon text_display ~ ~ ~ {\
     billboard:"$(billboard)",\
     default_background:$(background)b,\
     see_through:$(see_through)b,\
+    Rotation:[0F,0F],\
     alignment:"$(alignment)",\
     Tags:["admin.text_display"],\
     transformation:{\
@@ -18,3 +19,5 @@ $summon text_display ~ ~ ~ {\
     },\
     background:1908001\
 }
+
+data modify entity @n[type=text_display,distance=..0.5,tag=admin.text_display] Rotation[0] set from entity @s Rotation[0]

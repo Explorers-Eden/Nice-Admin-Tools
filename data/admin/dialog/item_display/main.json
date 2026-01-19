@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Nice Admin Tools: Edit Item Displays",
+  "external_title": "Nice Admin Tools: Edit Item Displays",
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "admin:menu"
+    }
+  },
+  "columns": 1,
+  "actions": [
+    {
+      "label": "Create",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:item_display/summon"
+      }
+    },
+    {
+      "label": "Modify",
+      "action": {
+        "type": "minecraft:run_command",
+        "template": "function ",
+        "command": "function admin:dialog/dynamic/modify_item_display/init"
+      }
+    },
+    {
+      "label": "Remove",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:item_display/remove"
+      }
+    }
+  ]
+}

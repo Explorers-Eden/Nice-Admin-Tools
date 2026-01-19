@@ -93,7 +93,11 @@
     },
     {
       "label": "Item Displays",
-      "tooltip": "(Not Added Yet)\nCreate, Modify Or Remove an Item Display"
+      "tooltip": "Create, Modify Or Remove an Item Display",
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "admin:item_display/main"
+      }
     },
     {
       "label": "Mannequins/NPCs",

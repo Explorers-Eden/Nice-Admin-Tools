@@ -3,7 +3,7 @@ $summon item ~ ~ ~ {\
         id:"minecraft:spawner",\
         count:1,\
         components:{\
-            "minecraft:item_name":"Mob Spawner",\
+            "minecraft:item_name":"Nice Mob Spawner",\
             "minecraft:block_entity_data":{\
                 id:"mob_spawner",\
                 SpawnCount:$(spawncount),\
