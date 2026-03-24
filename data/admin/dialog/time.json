@@ -39,6 +39,38 @@
       "end": 24000,
       "step": 100,
       "initial": 6000
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "rate",
+      "label": "Daylight Cycle Length",
+      "options": [
+        {
+          "id": "24h",
+          "display": "24 Hours"
+        },
+        {
+          "id": "100m",
+          "display": "100 Minutes"
+        },
+        {
+          "id": "80m",
+          "display": "80 Minutes"
+        },
+        {
+          "id": "60m",
+          "display": "60 Minutes"
+        },
+        {
+          "id": "40m",
+          "display": "40 Minutes"
+        },
+        {
+          "id": "20m",
+          "display": "20 Minutes (Default)",
+          "initial": true
+        }
+      ]
     }
   ],
   "can_close_with_escape": true,
@@ -48,7 +80,7 @@
     "label": "Confirm",
     "action": {
       "type": "minecraft:dynamic/run_command",
-      "template": "function admin:time/init {time:$(time),tick:$(tick)}"
+      "template": "function admin:time/init {rate:'$(rate)',time:$(time),tick:$(tick)}"
     }
   },
   "no": {

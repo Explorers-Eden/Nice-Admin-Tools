@@ -1,1 +1,1 @@
-$time set $(tick)
+$time set $(tick)t

@@ -1,1 +1,1 @@
-$time set $(type)
+$time set minecraft:$(type)
