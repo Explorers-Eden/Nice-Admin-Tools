@@ -1,7 +1,11 @@
 Project-ID: lGXkbPM6
+Mod-ID: mr_nice_admin_tools
+Namespace: admin
+Slug: nice-admin-tools
+Name: Nice Admin Tools
 
 Meta Data:
-  Versions: 
+  Versions:
     - 26.1
     - 26.1.1
     - 26.1.2
