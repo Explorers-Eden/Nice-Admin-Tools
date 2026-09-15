@@ -1,5 +1,9 @@
-# Minecraft Version(s): 26.2
+# Minecraft Version(s): 26.3
+## The Wilderness Bound update had lots of small technical changes which added up - so please report any Bugs you catch on our Discord server. 
+## We also moved away from crowdin for our translations and now have our own solution. Feel free to contribute: https://explorerseden.eu/translate/
+## Thank you!
+
 ## Changes:
-- Added Option to "Change Time" Settings to set a specific Daylight Cycle Length (Options: 24 Hours, 100/80/60/40/20 Minutes)
+
 
 ## Fixes:
